@@ -1,8 +1,10 @@
-export function checkOnFishHealth(foodlevel) {
-    if (foodlevel < 12) return 'ypur to low';
+export function checkOnFishHealth(foodLevel) {
+    if (foodLevel < 12) return -1;
 
-    if (foodlevel > 14) return 'your to high';
+    if (foodLevel > 14) return 1;
 
-    return 'happyfish';
+    if (foodLevel === 13) return 0; 
+
+
 }
 
