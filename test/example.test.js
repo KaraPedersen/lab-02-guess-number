@@ -8,10 +8,11 @@ test('if food level is correct', (expect) => {
     // Set up your arguments and expectations
     const expected = 0;
     const foodLevel = 13;
-    
+    const correctLevel = 13;
+
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = checkOnFishHealth(foodLevel);
+    const actual = checkOnFishHealth(foodLevel, correctLevel);
 
 
     //Expect
@@ -24,10 +25,11 @@ test('if food level too high', (expect) => {
     // Set up your arguments and expectations
     const expected = 1;
     const foodLevel = 18;
+    const correctLevel = 13;
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = checkOnFishHealth(foodLevel);
+    const actual = checkOnFishHealth(foodLevel, correctLevel);
 
 
     //Expect
@@ -41,10 +43,11 @@ test('if food level too low', (expect) => {
     // Set up your arguments and expectations
     const expected = -1;
     const foodLevel = 2;
+    const correctLevel = 13;
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = checkOnFishHealth(foodLevel);
+    const actual = checkOnFishHealth(foodLevel, correctLevel);
 
 
     //Expect
