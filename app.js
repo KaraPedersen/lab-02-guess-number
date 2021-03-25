@@ -7,7 +7,7 @@ const image = document.getElementById('fish-image');
 const input = document.getElementById('user-input');
 const span = document.getElementById('results');
 
-const rightAnswer = 10;
+const rightAnswer = 13;
 
     let counter = 4
 button.addEventListener('click', () => {
