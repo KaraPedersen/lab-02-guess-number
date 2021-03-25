@@ -1,9 +1,9 @@
-export function checkOnFishHealth(foodLevel) {
-    if (foodLevel < 12) return -1;
+export function checkOnFishHealth(foodLevel, correctLevel) {
+    if (foodLevel < correctLevel) return -1;
 
-    if (foodLevel > 14) return 1;
+    if (foodLevel > correctLevel) return 1;
 
-    if (foodLevel === 13) return 0; 
+    if (foodLevel === correctLevel) return 0; 
 
 
 }
